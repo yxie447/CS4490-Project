@@ -7,7 +7,28 @@ This project investigates the cross-regional generalizability of **FinBERT**, a 
 ---
 
 ## Project Structure
-Project/ │ ├── NA/ # North American company data (excluded from GitHub) ├── Europe/ # European company data (excluded) ├── Asia/ # Asian company data (excluded) │ ├── data_clean.py # Cleans Income Statement and Balance Sheet files ├── generate_text.py # Generates textual financial summaries ├── generate_training_data.py # Creates labeled training samples │ ├── FinBERT_finetune_all.py # Train FinBERT on NA data ├── finetune_asia.py # Fine-tune model on Asia data ├── finetune_europe.py # Fine-tune model on Europe data ├── evaluate_cross_region.py # Evaluate NA-trained model on Europe/Asia ├── evaluate_asia_finetuned.py # Evaluate fine-tuned Asia model ├── evaluate_europe_finetuned.py # Evaluate fine-tuned Europe model │ ├── training_log.csv # Model training and validation history ├── README.md # This file
+The repository contains the following structure:
+
+Project/
+├── NA/                           # North American company data (excluded from GitHub)
+├── Europe/                       # European company data (excluded)
+├── Asia/                         # Asian company data (excluded)
+│
+├── data_clean.py                 # Cleans Income Statement and Balance Sheet files
+├── generate_text.py              # Generates textual financial summaries from financial data
+├── generate_training_data.py     # Creates labeled training samples based on stock movement
+│
+├── FinBERT_finetune_all.py       # Train FinBERT on NA data
+├── evaluate_cross_region.py      # Evaluate NA-trained model on Europe/Asia
+│
+├── finetune_europe.py            # Fine-tune FinBERT on Europe data
+├── evaluate_europe_finetuned.py  # Evaluate Europe fine-tuned model
+│
+├── finetune_asia.py              # Fine-tune FinBERT on Asia data
+├── evaluate_asia_finetuned.py    # Evaluate Asia fine-tuned model
+│
+├── training_log.csv              # Model training and validation history
+├── README.md                     # This file
 
 ## Data Access
 
