@@ -1,6 +1,6 @@
 # CS4490-Project
 
-# FinBERT Cross-Region Financial Sentiment Analysis
+# Cross-Market Applicability of AI Sentiment Analysis Models
 
 This project investigates the cross-regional generalizability of **FinBERT**, a pre-trained financial language model. We trained FinBERT on North American (NA) companies’ financial statement texts and evaluated its performance on companies from **Europe** and **Asia**, analyzing domain shift effects and testing the impact of lightweight fine-tuning.
 
